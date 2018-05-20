@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.liquibase</groupId>
+		<groupId>com.proper.enterprise.platform</groupId>
 		<artifactId>liquibase-parent</artifactId>
 		<version>3.6.1-SNAPSHOT</version>
 	</parent>
