@@ -4,8 +4,8 @@
 
     <parent>
         <artifactId>liquibase-parent</artifactId>
-        <groupId>org.liquibase</groupId>
-        <version>3.6.2</version>
+        <groupId>com.proper.enterprise.platform</groupId>
+        <version>3.6.2-SNAPSHOT</version>
     </parent>
 
 
@@ -61,12 +61,12 @@
 
         <!-- Main artifacts to be tested -->
         <dependency>
-            <groupId>org.liquibase</groupId>
+            <groupId>com.proper.enterprise.platform</groupId>
             <artifactId>liquibase-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.liquibase</groupId>
+            <groupId>com.proper.enterprise.platform</groupId>
             <artifactId>liquibase-core</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>

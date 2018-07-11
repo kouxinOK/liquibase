@@ -6,7 +6,7 @@
   <build>
     <plugins>
       <plugin>
-          <groupId>org.liquibase</groupId>
+          <groupId>com.proper.enterprise.platform</groupId>
           <artifactId>liquibase-plugin</artifactId>
         <configuration>
           <verbose>true</verbose>
