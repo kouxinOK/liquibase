@@ -19,8 +19,15 @@ public class SpringBootFatJarTest {
 
     @Test
     public void testGetPathForResourceWithSimplePath() {
-        String result = SpringBootFatJar.getPathForResource("some/path!/that/has/one/bang");
-        assertEquals("some/path!/that/has/one/bang", result);
+        String result = SpringBootFatJar.getPathForResource("some/simple/path");
+        assertEquals("some/simple/path", result);
+    }
+
+    @Test
+    public void testGetPathForResourceWithSpringBootFatJar() {
+        String path = "jar:file:/some/fat.jar!/BOOT-INF/lib/some.jar!/db/changelogs";
+        String result = SpringBootFatJar.getPathForResource(path);
+        assertEquals("BOOT-INF/lib/some.jar!/db/changelogs", result);
     }
 
     @Test
@@ -34,4 +41,5 @@ public class SpringBootFatJarTest {
         String result = SpringBootFatJar.getSimplePathForResources("/that/has/one/bang","some/path!/that/has/one/bang");
         assertEquals("/that/has/one/bang", result);
     }
+
 }
